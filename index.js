@@ -1,6 +1,7 @@
 var http = require('http');
 var fs = require('fs')
 
+
 http.createServer(function (request, response) {
 
     // 发送 HTTP 头部 
@@ -11,7 +12,6 @@ http.createServer(function (request, response) {
 		if(err){
 			console.log('error')
 		}else{
-			console.log(data)
 			return data.toString()
 		}
 	})
